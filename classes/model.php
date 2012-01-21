@@ -96,7 +96,7 @@ abstract class Model {
 	{
 		if (isset($this->query))
 		{
-			$this->query = null;
+			unset($this->query);
 		}
 
 		$this->query = DB::select()
